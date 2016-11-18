@@ -150,8 +150,11 @@ class UserController extends AbstractActionController
                 $user->setMeta('city', $eud['euf-city']);
                 $user->setMeta('phone', $eud['euf-phone']);
                 $user->setMeta('birthdate', $eud['euf-birthdate']);
-                $user->setMeta('notes', $eud['euf-notes']);
+                $user->setMeta('licence', $eud['euf-licence']);
                 $user->setMeta('ranking', $eud['euf-ranking']);
+                $user->setMeta('tickets', $eud['euf-tickets']);
+                $user->setMeta('bookings_year', $eud['euf-bookings_year']);
+                $user->setMeta('notes', $eud['euf-notes']);
 
                 $userManager->save($user);
 
@@ -189,6 +192,9 @@ class UserController extends AbstractActionController
                     'euf-birthdate' => $user->getMeta('birthdate'),
                     'euf-notes' => $user->getMeta('notes'),
                     'euf-ranking' => $user->getMeta('ranking'),
+                    'euf-licence' => $user->getMeta('licence'),
+                    'euf-tickets' => $user->getMeta('tickets'),
+                    'euf-bookings_year' => $user->getMeta('bookings_year'),
                 ));
             }
         }

@@ -204,15 +204,14 @@ class EditForm extends Form
         ));
 
         $this->add(array(
-            'name' => 'euf-notes',
-            'type' => 'Textarea',
+            'name' => 'euf-licence',
+            'type' => 'Text',
             'attributes' => array(
-                'id' => 'euf-notes',
-                'style' => 'width: 250px; height: 48px;',
+                'id' => 'euf-licence',
+                'style' => 'width: 116px;',
             ),
             'options' => array(
-                'label' => 'Notes',
-                'notes' => 'These are only visible for administration',
+                'label' => 'Licence',
             ),
         ));
 
@@ -225,6 +224,43 @@ class EditForm extends Form
             ),
             'options' => array(
                 'label' => 'Ranking',
+            ),
+        ));
+
+        $this->add(array(
+            'name' => 'euf-tickets',
+            'type' => 'Text',
+            'attributes' => array(
+                'id' => 'euf-tickets',
+                'style' => 'width: 116px;',
+            ),
+            'options' => array(
+                'label' => 'Remaining Tickets',
+            ),
+        ));
+
+        $this->add(array(
+            'name' => 'euf-bookings_year',
+            'type' => 'Text',
+            'attributes' => array(
+                'id' => 'euf-bookings_year',
+                'style' => 'width: 116px;',
+            ),
+            'options' => array(
+                'label' => 'Bookings this year',
+            ),
+        ));
+
+        $this->add(array(
+            'name' => 'euf-notes',
+            'type' => 'Textarea',
+            'attributes' => array(
+                'id' => 'euf-notes',
+                'style' => 'width: 250px; height: 48px;',
+            ),
+            'options' => array(
+                'label' => 'Notes',
+                'notes' => 'These are only visible for administration',
             ),
         ));
 
@@ -461,13 +497,31 @@ class EditForm extends Form
                     array('name' => 'StringTrim'),
                 ),
             ),
-            'euf-notes' => array(
+            'euf-licence' => array(
                 'required' => false,
                 'filters' => array(
                     array('name' => 'StringTrim'),
                 ),
             ),
             'euf-ranking' => array(
+                'required' => false,
+                'filters' => array(
+                    array('name' => 'StringTrim'),
+                ),
+            ),
+            'euf-tickets' => array(
+                'required' => false,
+                'filters' => array(
+                    array('name' => 'StringTrim'),
+                ),
+            ),
+            'euf-bookings_year' => array(
+                'required' => false,
+                'filters' => array(
+                    array('name' => 'StringTrim'),
+                ),
+            ),
+            'euf-notes' => array(
                 'required' => false,
                 'filters' => array(
                     array('name' => 'StringTrim'),

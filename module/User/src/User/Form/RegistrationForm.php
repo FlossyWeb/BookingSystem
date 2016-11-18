@@ -200,6 +200,32 @@ class RegistrationForm extends Form
             ),
         ));
 
+        $this->add(array(
+            'name' => 'rf-licence',
+            'type' => 'Text',
+            'attributes' => array(
+                'id' => 'rf-licence',
+                'style' => 'width: 116px;',
+            ),
+            'options' => array(
+                'label' => 'Licence',
+                'notes' => 'If you have one',
+            ),
+        ));
+
+        $this->add(array(
+            'name' => 'rf-ranking',
+            'type' => 'Text',
+            'attributes' => array(
+                'id' => 'rf-ranking',
+                'style' => 'width: 116px;',
+            ),
+            'options' => array(
+                'label' => 'Ranking',
+                'notes' => 'This is optional',
+            ),
+        ));
+
         /* Add business terms and privacy policy if configured */
 
         $termsFile = $this->optionManager->get('service.user.registration.terms.file');

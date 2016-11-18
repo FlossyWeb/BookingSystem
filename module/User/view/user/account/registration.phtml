@@ -119,7 +119,36 @@ $this->headScript()->appendFile($this->basePath('js/controller/user/registration
                     </tr>
 
                     <?= $this->formRowDefault($form, 'rf-phone') ?>
-                    <?= $this->formRowDefault($form, 'rf-birthdate') ?>
+                    <?//= $this->formRowDefault($form, 'rf-birthdate') ?>
+                    <?//= $this->formRowDefault($form, 'rf-licence') ?>
+                    <?//= $this->formRowDefault($form, 'rf-ranking') ?>
+					<tr>
+						<td class="default-form-label-row">
+                            <?= $this->formLabel($form->get('rf-birthdate')) ?>
+						</td>
+						<td>
+                            <?= $this->formElement($form->get('rf-birthdate')) ?>
+							<div class="default-form-notes choa-inline">C'est optionnel</div> 
+						</td>
+					</tr>
+					<tr>
+						<td class="default-form-label-row">
+                            <?= $this->formLabel($form->get('rf-licence')) ?>
+						</td>
+						<td>
+                            <?= $this->formElement($form->get('rf-licence')) ?>
+							<div class="default-form-notes choa-inline">Si vous en avez une</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="default-form-label-row">
+                            <?= $this->formLabel($form->get('rf-ranking')) ?>
+						</td>
+						<td>
+                            <?= $this->formElement($form->get('rf-ranking')) ?>
+							<div class="default-form-notes choa-inline">C'est optionnel</div>
+						</td>
+					</tr>
                 </table>
             </div>
 

@@ -141,7 +141,7 @@ return array(
 
     'We only use this to inform you<br>about changes to your bookings' => 'Nous ne faisons ça que pour vous informer<br>à propos de vos réservations',
 
-    'Salutation' => 'Salutation',
+    'Salutation' => 'Civilité',
     'First & Last name' => 'Prénom & Nom',
     'Last name' => 'Nom',
     'Street & Number' => 'Rue et numéro',
@@ -150,7 +150,12 @@ return array(
     'City' => 'Ville',
     'Phone number' => 'Téléphone',
     'Birthday' => 'Date de naissance',
+    'Licence' => 'Licence',
+    'Ranking' => 'Classement',
+    'Remaining Tickets' => 'Tickets restant',
+    'Bookings this year' => 'Réservations cette année',
     'This is optional' => 'C\'est optionnel',
+    'If you have one' => 'Si vous en avez une',
 
     'Complete registration' => 'Compléter votre inscription',
 

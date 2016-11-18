@@ -179,6 +179,9 @@ class AccountController extends AbstractActionController
                     $meta['birthdate'] = $registrationData['rf-birthdate'];
                 }
 
+                $meta['licence'] = $registrationData['rf-licence'];
+                $meta['ranking'] = $registrationData['rf-ranking'];
+
                 $meta['locale'] = $this->config('i18n.locale');
 
                 if ($this->option('service.user.activation') == 'immediate') {

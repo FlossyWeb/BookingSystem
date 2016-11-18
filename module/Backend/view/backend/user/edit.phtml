@@ -113,14 +113,6 @@ $this->headScript()->appendFile($this->basePath('js/controller/backend/user/edit
                         ?>
                     </td>
                 </tr>
-                <tr>
-                    <td class="default-form-label-row">
-                        <?= $this->formLabel($form->get('euf-ranking')) ?>
-                    </td>
-                    <td>
-                        <?= $this->formElement($form->get('euf-ranking')) ?>
-                    </td>
-                </tr>
             </table>
 
             <table class="default-table half-table" style="float: right;">
@@ -186,6 +178,38 @@ $this->headScript()->appendFile($this->basePath('js/controller/backend/user/edit
                     <td>
                         <?= $this->formElement($form->get('euf-birthdate')) ?>
                         <?= $this->formElementErrors($form->get('euf-birthdate')) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="default-form-label-row">
+                        <?= $this->formLabel($form->get('euf-licence')) ?>
+                    </td>
+                    <td>
+                        <?= $this->formElement($form->get('euf-licence')) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="default-form-label-row">
+                        <?= $this->formLabel($form->get('euf-ranking')) ?>
+                    </td>
+                    <td>
+                        <?= $this->formElement($form->get('euf-ranking')) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="default-form-label-row">
+                        <?= $this->formLabel($form->get('euf-tickets')) ?>
+                    </td>
+                    <td>
+                        <?= $this->formElement($form->get('euf-tickets')) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="default-form-label-row">
+                        <?= $this->formLabel($form->get('euf-bookings_year')) ?>
+                    </td>
+                    <td>
+                        <?= $this->formElement($form->get('euf-bookings_year')) ?>
                     </td>
                 </tr>
                 <tr>
